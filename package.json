@@ -1,0 +1,25 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "this is a calculator app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyucsb/calculator.git"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Andy Silverman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyucsb/calculator/issues"
+  },
+  "homepage": "https://github.com/andyucsb/calculator#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  }
+}

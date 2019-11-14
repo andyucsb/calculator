@@ -6,3 +6,17 @@ h1 {
 h1:hover {
   text-decoration: underline;
 }
+
+.button {
+  background-color: rgb(114, 26, 197);
+  color: rgb(223, 219, 13);
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+   
+}
+
+.button.even {
+  background-color: rgb(223, 219, 13);
+  color: rgb(114, 26, 197);
+}
