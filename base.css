@@ -1,7 +1,7 @@
 h1 {
   font-size: medium;
-  font-family: sans-serif; 
-} 
+  font-family: sans-serif;
+}
 
 h1:hover {
   text-decoration: underline;
@@ -12,16 +12,23 @@ h1:hover {
   flex-direction: column;
 }
 
+.button-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .button {
   background-color: rgb(114, 26, 197);
+  border-color: rgb(114, 26, 197);
   color: rgb(223, 219, 13);
+  display: block;
   font-size: 20px;
   height: 45px;
   width: 45px;
-   
 }
 
 .button.even {
   background-color: rgb(223, 219, 13);
+  border-color: rgb(223, 219, 13);
   color: rgb(114, 26, 197);
 }

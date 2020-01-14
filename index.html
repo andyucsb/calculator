@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <script src="app.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calculator</title>
-  <link rel="stylesheet" type="text/css" href="base.css">
-  <script src="app.js"></script>
-</head>
-
-<body>
-  <div id="root">
-    <h1>Welcome to the Calculator</h1>
-    <label for="display">Calculator</label>
-    <input type="text" id="display"`>
-    <div class="buttons">
-      <div>
-        <button class="button even" onclick="handleOperatorButtonClick('AC')">AC</button>
-        <button class="button" onclick="handleOperatorButtonClick('+/-')">+/-</button>
-        <button class="button even" onclick="handleOperatorButtonClick('%')">%</button>
-        <button class="button" onclick="handleOperatorButtonClick('/')">/</button>
+  <body>
+    <div id="root">
+      <h1>Welcome to the Calculator</h1>
+      <label for="display">Calculator</label>
+      <input type="text" id="display" />
+      <div class="buttons">
+        <div class="button-row">
+          <button class="button even" onclick="handleOperatorButtonClick('AC')">
+            AC
+          </button>
+          <button class="button" onclick="handleOperatorButtonClick('+/-')">
+            +/-
+          </button>
+          <button class="button even" onclick="handleOperatorButtonClick('%')">
+            %
+          </button>
+          <button class="button" onclick="handleOperatorButtonClick('/')">
+            /
+          </button>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="handleNumberButtonClick(7)">7</button>
+          <button class="button even" onclick="handleNumberButtonClick(8)">
+            8
+          </button>
+          <button class="button" onclick="handleNumberButtonClick(9)">9</button>
+          <button class="button even" onclick="handleOperatorButtonClick('x')">
+            x
+          </button>
+        </div>
+        <div class="button-row">
+          <button class="button even" onclick="handleNumberButtonClick(4)">
+            4
+          </button>
+          <button class="button" onclick="handleNumberButtonClick(5)">5</button>
+          <button class="button even" onclick="handleNumberButtonClick(6)">
+            6
+          </button>
+          <button class="button" onclick="handleOperatorButtonClick('-')">
+            -
+          </button>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="handleNumberButtonClick(1)">1</button>
+          <button class="button even" onclick="handleNumberButtonClick(2)">
+            2
+          </button>
+          <button class="button" onclick="handleNumberButtonClick(3)">3</button>
+          <button class="button" onclick="handleOperatorButtonClick('+')">
+            +
+          </button>
+        </div>
+        <div class="button-row">
+          <button class="button even" onclick="handleNumberButtonClick(0)">
+            0
+          </button>
+          <button class="button" onclick="handleOperatorButtonClick('.')">
+            .
+          </button>
+          <button class="button even" onclick="handleOperatorButtonClick('=')">
+            =
+          </button>
+        </div>
       </div>
-      <div>
-        <button class="button" onclick="handleNumberButtonClick(7)">7</button>
-        <button class="button even" onclick="handleNumberButtonClick(8)">8</button>
-        <button class="button" onclick="handleNumberButtonClick(9)">9</button>
-        <button class="button even" onclick="handleOperatorButtonClick('x')">x</button>
-      </div>
-      <div>
-        <button class="button even" onclick="handleNumberButtonClick(4)">4</button>
-        <button class="button" onclick="handleNumberButtonClick(5)">5</button>
-        <button class="button even" onclick="handleNumberButtonClick(6)">6</button>
-        <button class="button" onclick="handleOperatorButtonClick('-')">-</button>
-      </div>
-      <div>
-        <button class="button" onclick="handleNumberButtonClick(1)">1</button>
-        <button class="button even" onclick="handleNumberButtonClick(2)">2</button>
-        <button class="button" onclick="handleNumberButtonClick(3)">3</button>
-        <button class="button" onclick="handleOperatorButtonClick('+')">+</button>
-      </div>
-      <div>
-        <button class="button even" onclick="handleNumberButtonClick(0)">0</button>
-        <button class="button" onclick="handleOperatorButtonClick('.')">.</button>
-        <button class="button even" onclick="handleOperatorButtonClick('=')">=</button>
-      </div>
-      
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
